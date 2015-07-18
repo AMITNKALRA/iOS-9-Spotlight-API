@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A59474D61B5ADD440075D3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59474D51B5ADD440075D3D6 /* AppDelegate.swift */; };
-		A59474D81B5ADD440075D3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59474D71B5ADD440075D3D6 /* ViewController.swift */; };
+		A59474D81B5ADD440075D3D6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59474D71B5ADD440075D3D6 /* MenuViewController.swift */; };
 		A59474DB1B5ADD440075D3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59474D91B5ADD440075D3D6 /* Main.storyboard */; };
 		A59474DE1B5ADD440075D3D6 /* Spotlight_API.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A59474DC1B5ADD440075D3D6 /* Spotlight_API.xcdatamodeld */; };
 		A59474E01B5ADD440075D3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59474DF1B5ADD440075D3D6 /* Assets.xcassets */; };
 		A59474E31B5ADD440075D3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59474E11B5ADD440075D3D6 /* LaunchScreen.storyboard */; };
+		A59474EB1B5ADD990075D3D6 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59474EA1B5ADD990075D3D6 /* OtherViewController.swift */; };
+		A59474ED1B5AE00E0075D3D6 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59474EC1B5AE00E0075D3D6 /* CoreSpotlight.framework */; };
+		A59474EF1B5AE0130075D3D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59474EE1B5AE0130075D3D6 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A59474D21B5ADD440075D3D6 /* Spotlight API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotlight API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59474D51B5ADD440075D3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A59474D71B5ADD440075D3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A59474D71B5ADD440075D3D6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A59474DA1B5ADD440075D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A59474DD1B5ADD440075D3D6 /* Spotlight_API.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spotlight_API.xcdatamodel; sourceTree = "<group>"; };
 		A59474DF1B5ADD440075D3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A59474E21B5ADD440075D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A59474E41B5ADD440075D3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59474EA1B5ADD990075D3D6 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		A59474EC1B5AE00E0075D3D6 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		A59474EE1B5AE0130075D3D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59474EF1B5AE0130075D3D6 /* MobileCoreServices.framework in Frameworks */,
+				A59474ED1B5AE00E0075D3D6 /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 		A59474C91B5ADD440075D3D6 = {
 			isa = PBXGroup;
 			children = (
+				A59474EE1B5AE0130075D3D6 /* MobileCoreServices.framework */,
+				A59474EC1B5AE00E0075D3D6 /* CoreSpotlight.framework */,
 				A59474D41B5ADD440075D3D6 /* Spotlight API */,
 				A59474D31B5ADD440075D3D6 /* Products */,
 			);
@@ -57,7 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				A59474D51B5ADD440075D3D6 /* AppDelegate.swift */,
-				A59474D71B5ADD440075D3D6 /* ViewController.swift */,
+				A59474D71B5ADD440075D3D6 /* MenuViewController.swift */,
+				A59474EA1B5ADD990075D3D6 /* OtherViewController.swift */,
 				A59474D91B5ADD440075D3D6 /* Main.storyboard */,
 				A59474DF1B5ADD440075D3D6 /* Assets.xcassets */,
 				A59474E11B5ADD440075D3D6 /* LaunchScreen.storyboard */,
@@ -138,7 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59474DE1B5ADD440075D3D6 /* Spotlight_API.xcdatamodeld in Sources */,
-				A59474D81B5ADD440075D3D6 /* ViewController.swift in Sources */,
+				A59474D81B5ADD440075D3D6 /* MenuViewController.swift in Sources */,
+				A59474EB1B5ADD990075D3D6 /* OtherViewController.swift in Sources */,
 				A59474D61B5ADD440075D3D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
